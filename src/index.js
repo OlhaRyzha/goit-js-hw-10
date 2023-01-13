@@ -1,3 +1,3 @@
 import './css/styles.css';
+import './js/gallery'
 
-const DEBOUNCE_DELAY = 300;
