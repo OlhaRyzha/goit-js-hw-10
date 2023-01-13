@@ -11,7 +11,7 @@ const countryInfoEl = document.querySelector('.country-info');
 const countriesAPI = new CountriesAPI();
 
 const onInputChange = event => {
-  const nameOfCountry = event.target.value;
+  const nameOfCountry = event.target.value.trim();
   if (nameOfCountry.length === 0) {
     countryListEl.innerHTML = '';
     countryInfoEl.innerHTML = '';
