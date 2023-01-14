@@ -23,7 +23,8 @@ const onInputChange = event => {
   countriesAPI
     .fetchCountries(nameOfCountry)
     .then(data => {
-
+  
+      
       if (data.length > 10) {
         countryListEl.innerHTML = '';
         countryInfoEl.innerHTML = '';
@@ -41,9 +42,11 @@ const onInputChange = event => {
         createCountryInfo(data);
       } else {
         countryInfoEl.innerHTML = '';
+        
       }
     })
     .catch(err => {
+      
       console.log(err);
     });
 };
